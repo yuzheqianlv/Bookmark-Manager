@@ -1,0 +1,16 @@
+[package]
+name = "bookmarks-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+regex = "1.11.1"
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.138"
+url = "2.5.4"
+dotenv = "0.15.0"
+tokio = { version = "1.0", features = ["full" ] }
+reqwest = { version = "0.12.12", features = ["json"] }
+chrono = "0.4.39"  # 新增：用于解析 HTML
+scraper = "0.17.1"
+unicode-normalization = "0.1.24"
